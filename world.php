@@ -15,9 +15,23 @@ $resultcountry = $find_country->fetchAll(PDO::FETCH_ASSOC);
 //$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
-<ul>
+
+<table>
+  <tr>
+    <th> Name  </th>
+    <th> Continenent </th>
+    <th> Year of Independence  </th>
+    <th> Head of State </th>
+  </tr>
+
 <?php foreach ($resultcountry as $row): ?>
-  <li><?= $row['name'] . ' is ruled by ' . $row['head_of_state']; ?></li>
+<tr>
+  <td><?php echo $row['name']; ?></td>
+  <td><?php echo $row['continent']; ?></td>
+  <td><?php echo $row['independence_year']; ?></td>
+  <td><?php echo $row['head_of_state']; ?></td>
+</tr>
+
 <?php endforeach; ?>
   
-</ul>
+</table>

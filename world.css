@@ -1,1 +1,70 @@
-/* Add your own styles */
+
+body{
+    margin:0;
+    font-size:16px;
+    background-color: #add8e6;
+}
+
+header{
+    text-align: center;
+    background-color:grey;
+    color:white;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+table{
+    border:1px solid;
+    border-collapse: collapse;
+    
+}
+
+table th{
+    border-top:1px solid;
+    border-bottom:1px solid;
+    border:1px solid;
+    padding-top:12px;
+    padding-bottom:12px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+table td{
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border:1px solid;
+    padding:8px;
+    text-align: center;
+}
+
+table tr:nth-child(odd){
+    background-color:#f2f2f2;
+}
+
+#controls{
+    display:flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#controls #lookup{
+    background-color:silver;    
+    color:black;
+    margin-left:10px;
+    height:50%;
+    padding:8px 20px;
+}
+
+label{
+    display:none;
+}
+
+input{
+    width:50%;
+}
+
+#result{
+    padding-top: 30px;
+    justify-content: center;
+    display:flex;
+}
